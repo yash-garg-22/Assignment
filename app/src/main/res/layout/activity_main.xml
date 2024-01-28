@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/drawer"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/sort"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/drawer"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/howdy_yash_garg"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/locationPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/drawer"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/name"
+                    android:src="@drawable/locy"
+                    />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/locationPhoto"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/karnal"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/name"
+                    />
+
+                <ImageView
+                    android:id="@+id/refine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/refine"
+                    />
+
+                <TextView
+                    android:id="@+id/refinename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/refine"
+                    android:text="@string/refine"
+                    android:textStyle="bold"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+    </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appbar"
+        android:text=""
+        android:gravity="center"
+        android:background="@drawable/round"
+        android:hint="Search"
+        android:textColorHint="@color/black"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/sort"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sort"
+        android:layout_toRightOf="@+id/search"
+        android:layout_below="@+id/appbar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/eyeImage"
+        android:layout_below="@+id/search" />
+
+    <TextView
+        android:id="@+id/explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/explore"
+        android:textSize="15sp"
+        android:layout_marginLeft="13dp"
+        />
+
+    <ImageView
+        android:id="@+id/eyeImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/explore"
+        android:src="@drawable/eye"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="23dp"
+        />
+
+    <TextView
+        android:id="@+id/network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/network"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/explore"
+        android:layout_marginLeft="33dp"
+        />
+
+    <ImageView
+        android:id="@+id/networkImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/explore"
+        android:src="@drawable/network"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/eyeImage"
+        android:layout_marginLeft="53dp"
+        />
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/chat"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/network"
+        android:layout_marginLeft="33dp"
+        />
+
+    <ImageView
+        android:id="@+id/chatImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/explore"
+        android:src="@drawable/chat"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/networkImage"
+        android:layout_marginLeft="53dp"
+        />
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/contacts"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/chat"
+        android:layout_marginLeft="33dp"
+        />
+
+    <ImageView
+        android:id="@+id/contactsImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/explore"
+        android:src="@drawable/contact"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/chatImage"
+        android:layout_marginLeft="53dp"
+        />
+
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/groups"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/contacts"
+        android:layout_marginLeft="33dp"
+        />
+
+    <ImageView
+        android:id="@+id/groupImage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/explore"
+        android:src="@drawable/groups"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/contactsImage"
+        android:layout_marginLeft="53dp"
+        />
+
+</RelativeLayout>

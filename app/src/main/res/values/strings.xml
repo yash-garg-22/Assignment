@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AssignmentUI</string>
+    <string name="howdy_yash_garg">Howdy Yash Garg!!</string>
+    <string name="karnal">Karnal</string>
+    <string name="refine">Refine</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore">Explore</string>
+    <string name="network">network</string>
+    <string name="chat">chat</string>
+    <string name="groups">groups</string>
+    <string name="contacts">contacts</string>
+    <string name="select_your_availability">Select Your Availability</string>
+    <string name="available_hey_let_us_connect">Available | Hey Let Us Connect</string>
+    <string name="add_your_status">Add Your Status</string>
+    <string name="hi_community_i_am_open_to_new_connections">Hi community! I am open to new connections</string>
+    <string name="select_purpose">Select Purpose</string>
+    <string name="coffee">Coffee</string>
+    <string name="business">Business</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="friendship">Friendship</string>
+    <string name="movies">Movies</string>
+    <string name="dinning">Dinning</string>
+    <string name="save_and_explore">Save and Explore</string>
+</resources>

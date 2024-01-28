@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F7"
+    tools:context=".Refine">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_availability"
+        android:textSize="33sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edit"
+        android:background="@drawable/round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/available_hey_let_us_connect"
+        android:textColorHint="@color/black"
+        android:textSize="33sp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_your_status"
+        android:textSize="33sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/edit"
+        />
+
+    <EditText
+        android:id="@+id/editstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hi_community_i_am_open_to_new_connections"
+        android:textColorHint="@color/black"
+        android:textSize="33sp"
+        android:layout_below="@+id/Status"
+        android:background="@drawable/round"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Hyper local Distance"
+        android:textSize="33sp"
+        android:layout_below="@+id/editstatus"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_purpose"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="33sp"
+        android:layout_below="@id/seekbar"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/cofee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purpose"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"
+        android:text="@string/coffee"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/Business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:text="@string/business"
+        android:textSize="25sp"
+        android:layout_below="@id/purpose"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/cofee"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/hobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:text="@string/hobbies"
+        android:textSize="25sp"
+        android:layout_below="@id/purpose"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/Business"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Friendship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cofee"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"
+        android:text="@string/friendship"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:text="@string/movies"
+        android:textSize="25sp"
+        android:layout_below="@id/Business"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/Friendship"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/dinning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:text="@string/dinning"
+        android:textSize="25sp"
+        android:layout_below="@id/hobby"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/movies"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dinning"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="@string/save_and_explore"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
